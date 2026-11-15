@@ -1,0 +1,9 @@
+{
+  "kind": "section",
+  "summary": "两列反向纵向滚动图墙 + 一块随悬停/点击更新的简短故事面板",
+  "use_when": "4–20 张图需要轻柔浏览，配一段精炼文字",
+  "avoid_when": "少于 4 张图、长文、任务型选择",
+  "allow_missing": [
+    "/missing-image.svg"
+  ]
+}

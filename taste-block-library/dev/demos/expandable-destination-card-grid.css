@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "../../assets/components/expandable-destination-card-grid/index.css";
+
+/* --- index.css 中的页面级规则 --- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body { margin: 0; font-family: system-ui, sans-serif; }
+
+* { scrollbar-width: none; }

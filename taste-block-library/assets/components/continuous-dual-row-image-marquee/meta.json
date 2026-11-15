@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "两行反向无缝滚动的图片卡，悬停/触摸显示文案",
+  "use_when": "目的地、酒店、体验的图片带",
+  "avoid_when": "任务型选择、长文案、每行少于 3 张图",
+  "allow_missing": [
+    "/missing-preview-asset.svg"
+  ]
+}

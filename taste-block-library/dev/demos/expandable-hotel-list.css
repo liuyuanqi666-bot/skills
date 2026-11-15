@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@import "../../assets/components/expandable-hotel-list/index.css";
+
+/* --- index.css 中的页面级规则 --- */
+body {margin:0;font-family:system-ui,sans-serif;background:#f5f2ec;}

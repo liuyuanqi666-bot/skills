@@ -1,0 +1,9 @@
+{
+  "kind": "section",
+  "summary": "全宽选中大图 Hero + 四轨 3D 滚动图墙，每图需配对比主题色",
+  "use_when": "有 8–20 张图且能为每张预先配好渐变主题",
+  "avoid_when": "图片少于 8 或多于 20、颜色无法预先分析、需连续阅读长文",
+  "allow_missing": [
+    "/missing-scene.svg"
+  ]
+}

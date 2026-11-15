@@ -1,0 +1,6 @@
+{
+  "kind": "section",
+  "summary": "全幅图文轮播，WebGL 点阵揭幕切换",
+  "use_when": "3–5 个以视觉为主的短故事(亮点/美食/住宿)",
+  "avoid_when": "详细行程、超过 5 章、不适合 WebGL 的环境"
+}

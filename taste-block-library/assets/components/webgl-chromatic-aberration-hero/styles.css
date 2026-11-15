@@ -1,0 +1,99 @@
+.glass-nav {
+  transition: background-color 100ms ease, border-color 100ms ease, box-shadow 100ms ease, backdrop-filter 100ms ease;
+}
+
+
+.glass-menu {
+  border: 1px solid rgb(255 255 255 / 18%);
+  background: rgb(8 29 59 / 88%);
+  box-shadow: 0 20px 40px -15px rgb(0 0 0 / 60%), 0 0 0 1px rgb(255 255 255 / 8%);
+  backdrop-filter: blur(16px);
+}
+
+
+.glass-capsule {
+  border: 1px solid rgb(255 255 255 / 25%);
+  background: rgb(255 255 255 / 12%);
+  backdrop-filter: blur(12px);
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .glass-capsule:hover {
+    border-color: rgb(255 255 255 / 45%);
+    background: rgb(255 255 255 / 22%);
+  }
+
+
+  .group:hover .brand-hover-label {
+    color: rgb(110 231 183);
+  }
+
+
+  .group:hover .menu-line-shift {
+    transform: translateX(2px);
+  }
+
+
+  .group:hover .menu-line-grow {
+    width: 100%;
+  }
+}
+
+
+.hero-content-padding { padding: 0 1.25rem 1.75rem; }
+
+.hero-main-title { font-size: 2.35rem; line-height: 1.18; }
+
+.hero-subtitle { font-size: 0.84rem; line-height: 1.5; }
+
+.desktop-scroll-hint { display: none; }
+
+
+@keyframes scroll-arrow-bounce {
+  0%, 100% { transform: translateY(-25%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+
+
+.scroll-arrow { animation: scroll-arrow-bounce 1s infinite; }
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+
+  .hero-content-padding { padding: 0 2.25rem 7rem; }
+
+  .hero-main-title { font-size: 3.5rem; line-height: 1.15; }
+
+  .hero-subtitle { font-size: 0.9375rem; line-height: 1.55; }
+
+  .desktop-scroll-hint { display: flex; }
+}
+
+
+@media (min-width: 1024px) {
+
+  .hero-content-padding { padding: 0 3.25rem 8rem; }
+
+  .hero-main-title { font-size: 4.5rem; line-height: 1.12; }
+
+  .hero-subtitle { font-size: 1rem; line-height: 1.6; }
+
+  .desktop-scroll-hint { display: flex; }
+}
+
+
+@media (min-width: 1440px) {
+
+  .hero-content-padding { padding: 0 3.75rem 9rem; }
+
+  .hero-main-title { font-size: 5rem; line-height: 1.1; }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .scroll-arrow,
+.animate-ping { animation: none; }
+}

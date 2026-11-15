@@ -1,0 +1,21 @@
+@import "../../assets/components/expandable-itinerary-card-grid/styles.css";
+
+/* --- styles.css 中的页面级规则 --- */
+:root {
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  color: #17201d;
+  background: #f3f2ee;
+  font-synthesis: none;
+}
+
+
+* { box-sizing: border-box; }
+
+html,
+body,
+#root { min-height: 100%; margin: 0; }
+
+body { overflow-x: hidden; }
+
+/* 演示页的演示控件（原 styles.css 里的全局规则；组件自己的按钮规则已在 styles.css 按类名限定） */
+button { font: inherit; -webkit-tap-highlight-color: transparent; }

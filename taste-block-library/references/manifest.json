@@ -1,0 +1,2509 @@
+{
+ "generatedBy": "dev/scripts/manifest.mjs（勿手改，改 assets/components/<name>/meta.json 后运行 npm run manifest 重新生成）",
+ "components": {
+  "animated-testimonials": {
+   "name": "animated-testimonials",
+   "kind": "pattern",
+   "summary": "3D 叠卡 + 逐词渐显的图文叙事卡",
+   "use_when": "景点/美食/美宿/服务卖点的少量图文叙事",
+   "avoid_when": "整页模板、大量文字、密集表格",
+   "files": [
+    "components/ui/animated-testimonials.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/animated-testimonials.tsx: AnimatedTestimonials",
+    "components/ui/animated-testimonials.tsx: type Testimonial"
+   ],
+   "npm": {
+    "@tabler/icons-react": "^3.46.0",
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/desert.jpg",
+    "images/forest-canopy.jpg",
+    "images/forest-lake.jpg",
+    "images/mountains.jpg",
+    "images/urban.jpg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "apple-cards-itinerary": {
+   "name": "apple-cards-itinerary",
+   "kind": "section",
+   "summary": "苹果风逐日行程：横滑卡片 + 点开详情浮层(Bento/多图)",
+   "use_when": "4–8 天、每天内容丰富的完整行程章节",
+   "avoid_when": "少于 3 张卡或简单列表；只要卡片动效时单独取 Card/Carousel",
+   "files": [
+    "components/ui/apple-cards-carousel.tsx",
+    "components/ui/itinerary-detail-content.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/apple-cards-carousel.tsx: BlurImage",
+    "components/ui/apple-cards-carousel.tsx: Card",
+    "components/ui/apple-cards-carousel.tsx: Carousel",
+    "components/ui/apple-cards-carousel.tsx: CarouselContext",
+    "components/ui/apple-cards-carousel.tsx: type CardData",
+    "components/ui/apple-cards-carousel.tsx: type ItineraryItem",
+    "components/ui/itinerary-detail-content.tsx: ItineraryDetailContent"
+   ],
+   "npm": {
+    "@tabler/icons-react": "^3.46.0",
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "use-outside-click.ts",
+    "utils.ts"
+   ],
+   "public": [
+    "images/desert.jpg",
+    "images/forest-canopy.jpg",
+    "images/forest-lake.jpg",
+    "images/forest-road.jpg",
+    "images/mountains.jpg",
+    "images/neon.jpg",
+    "images/urban.jpg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {
+    "background": "#ffffff",
+    "color": "#1d1d1f"
+   },
+   "conflictsWith": []
+  },
+  "aurora-background": {
+   "name": "aurora-background",
+   "kind": "effect",
+   "summary": "连续极光渐变背景，支持三种蒙版",
+   "use_when": "Hero、页头、卡片的氛围背景",
+   "avoid_when": "数据密集表格、需要纯平高对比的内容、低功耗环境",
+   "files": [
+    "components/ui/aurora-background.css",
+    "components/ui/aurora-background.tsx",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/aurora-background.tsx: AuroraBackground",
+    "components/ui/aurora-background.tsx: type AuroraBackgroundProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {
+    "motion": "^13.2.0"
+   },
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "black-meteor-shower": {
+   "name": "black-meteor-shower",
+   "kind": "effect",
+   "summary": "浅色底上的黑色斜向流星",
+   "use_when": "浅色 Hero/公告/标题卡的稀疏装饰动效",
+   "avoid_when": "密集文字后、深色底(需改色)、任务反馈",
+   "files": [
+    "meteors.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "meteors.tsx: Meteors"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".page-shell",
+     ".meteor-demo"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "bounded-focus-flip-card-pile": {
+   "name": "bounded-focus-flip-card-pile",
+   "kind": "effect",
+   "summary": "可自由拖拽的 3D 卡堆，选中卡飞到舞台中央放大并翻面看详情",
+   "use_when": "少量图片集合，强调手感和逐项讲述",
+   "avoid_when": "长/动态列表、排序数据、键盘优先、需原生滚动的页面",
+   "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+   ],
+   "files": [
+    "BoundedFocusFlipCardPile.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "BoundedFocusFlipCardPile.tsx: BoundedFocusFlipCard",
+    "BoundedFocusFlipCardPile.tsx: BoundedFocusFlipCardPile",
+    "BoundedFocusFlipCardPile.tsx: type BoundedFocusFlipCardPileProps",
+    "BoundedFocusFlipCardPile.tsx: type BoundedFocusFlipCardProps"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/document-cover-svg/cover-itinerary-standard.svg",
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".fixture-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "canvas-reveal-story-carousel": {
+   "name": "canvas-reveal-story-carousel",
+   "kind": "section",
+   "summary": "全幅图文轮播，WebGL 点阵揭幕切换",
+   "use_when": "3–5 个以视觉为主的短故事(亮点/美食/住宿)",
+   "avoid_when": "详细行程、超过 5 章、不适合 WebGL 的环境",
+   "files": [
+    "CanvasRevealStorySlider.tsx",
+    "components/ui/canvas-reveal-effect.tsx",
+    "story-data.ts",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "CanvasRevealStorySlider.tsx: CanvasRevealStorySlider",
+    "components/ui/canvas-reveal-effect.tsx: CanvasRevealEffect",
+    "story-data.ts: storyChapters",
+    "story-data.ts: type StoryChapter"
+   ],
+   "npm": {
+    "@react-three/fiber": "^9.3.0",
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0",
+    "three": "^0.180.0"
+   },
+   "types": {
+    "@types/three": "^0.180.0"
+   },
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [
+    "images/canvas-reveal-travel-narrative/local-table.webp",
+    "images/canvas-reveal-travel-narrative/mountain-lodge.webp",
+    "images/canvas-reveal-travel-narrative/mountain-route.webp"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".preview-page",
+     ".story-slider"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#0b0e10",
+    "color": "#f7f7f3"
+   },
+   "conflictsWith": []
+  },
+  "celestial-sparkle-beam": {
+   "name": "celestial-sparkle-beam",
+   "kind": "effect",
+   "summary": "激光光束 + 星尘粒子的深色背景光环",
+   "use_when": "极光/观星/极地等星空主题页的收尾页",
+   "avoid_when": "通用首页 Hero、浅色底、密集正文后",
+   "files": [
+    "sparkles.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "sparkles.tsx: SparklesCore",
+    "sparkles.tsx: cn",
+    "sparkles.tsx: type ParticlesProps",
+    "sparkles.tsx: type SparklesCoreProps"
+   ],
+   "npm": {
+    "@tsparticles/engine": "3.8.1",
+    "@tsparticles/react": "3.0.0",
+    "@tsparticles/slim": "3.8.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "chromatic-image-carousel": {
+   "name": "chromatic-image-carousel",
+   "kind": "effect",
+   "summary": "带色散与 3D 倾斜的图片轮播，可自动/手动切换",
+   "use_when": "设计工作室、风光作品集、旅游展示的 Hero 轮播",
+   "avoid_when": "文字多的幻灯片、无 WebGL 环境、需同时看全部项",
+   "files": [
+    "ChromaticImage.tsx",
+    "ChromaticImageCarousel.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "ChromaticImage.tsx: ChromaticImage",
+    "ChromaticImage.tsx: type ChromaticImageProps",
+    "ChromaticImageCarousel.tsx: ChromaticImageCarousel",
+    "ChromaticImageCarousel.tsx: DEFAULT_PROJECTS",
+    "ChromaticImageCarousel.tsx: type CarouselProjectItem",
+    "ChromaticImageCarousel.tsx: type ChromaticImageCarouselProps"
+   ],
+   "npm": {
+    "@tabler/icons-react": "^3.46.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "continuous-dual-row-image-marquee": {
+   "name": "continuous-dual-row-image-marquee",
+   "kind": "effect",
+   "summary": "两行反向无缝滚动的图片卡，悬停/触摸显示文案",
+   "use_when": "目的地、酒店、体验的图片带",
+   "avoid_when": "任务型选择、长文案、每行少于 3 张图",
+   "allow_missing": [
+    "/missing-preview-asset.svg"
+   ],
+   "files": [
+    "TravelImageMarquee.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "TravelImageMarquee.tsx: TravelImageMarquee",
+    "TravelImageMarquee.tsx: type MarqueeCard",
+    "TravelImageMarquee.tsx: type TravelImageMarqueeProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".fixture-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f7f5ef",
+    "color": "#17202a"
+   },
+   "conflictsWith": []
+  },
+  "document-pack-preview-badge": {
+   "name": "document-pack-preview-badge",
+   "kind": "pattern",
+   "summary": "文档包按钮：桌面扇形预览 3 张封面，点开列出全部可下载文件",
+   "use_when": "多个相关文件(行程/签证/表格)合并成一个下载入口",
+   "avoid_when": "只有一个文件、需先比较内容、下载需鉴权",
+   "allow_missing": [
+    "/missing-document-cover.svg"
+   ],
+   "files": [
+    "components/DocumentPackBadge.tsx",
+    "components/ImagesBadge.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/DocumentPackBadge.tsx: DocumentPackBadge",
+    "components/DocumentPackBadge.tsx: type DocumentFile",
+    "components/DocumentPackBadge.tsx: type DocumentPackBadgeProps",
+    "components/ImagesBadge.tsx: ImagesBadge",
+    "components/ImagesBadge.tsx: type ImagesBadgeProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [
+    "sample-files/route-summary.txt",
+    "sample-files/seasonal-route.txt",
+    "sample-files/traveller-form.txt",
+    "sample-files/visa-checklist.txt"
+   ],
+   "importedAssets": [
+    "images/document-cover-svg/cover-itinerary-spring.svg",
+    "images/document-cover-svg/cover-itinerary-standard.svg",
+    "images/document-cover-svg/cover-profile-form.svg",
+    "images/document-cover-svg/cover-visa-guide.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".demo-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f7f7f5",
+    "color": "#171717"
+   },
+   "conflictsWith": []
+  },
+  "expandable-destination-card-grid": {
+   "name": "expandable-destination-card-grid",
+   "kind": "pattern",
+   "summary": "两列图片卡，共享元素动画展开成详情浮层",
+   "use_when": "4–8 项以大图为主的目的地/酒店展示",
+   "avoid_when": "文字为主、需并排比较、超过 10 项",
+   "files": [
+    "ExpandableCardDemoGrid.tsx",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "ExpandableCardDemoGrid.tsx: CloseIcon",
+    "ExpandableCardDemoGrid.tsx: ExpandableCardDemoGrid",
+    "ExpandableCardDemoGrid.tsx: defaultCards",
+    "ExpandableCardDemoGrid.tsx: type ExpandableItem"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "use-outside-click.ts"
+   ],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "expandable-hotel-list": {
+   "name": "expandable-hotel-list",
+   "kind": "pattern",
+   "summary": "纵向图片条目，共享元素动画展开详情浮层",
+   "use_when": "4–10 项精选酒店/目的地，不离开页面看详情",
+   "avoid_when": "超过 12 项、表格对比、可编辑数据",
+   "files": [
+    "ExpandableCardDemo.tsx",
+    "hotel-list.css",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "ExpandableCardDemo.tsx: CloseIcon",
+    "ExpandableCardDemo.tsx: ExpandableCardDemo",
+    "ExpandableCardDemo.tsx: defaultCards",
+    "ExpandableCardDemo.tsx: type ExpandableItem"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "use-outside-click.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg"
+   ],
+   "css": [
+    "hotel-list.css",
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {
+    "background": "#f5f2ec"
+   },
+   "conflictsWith": []
+  },
+  "expandable-itinerary-card-grid": {
+   "name": "expandable-itinerary-card-grid",
+   "kind": "section",
+   "summary": "2×2 分页日程卡，选中卡居中，只展开下半部详情区",
+   "use_when": "逐日图片行程：手机可直达某天、桌面分页浏览",
+   "avoid_when": "可编辑日程、密集对比表、无法放固定浮层的页面",
+   "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+   ],
+   "files": [
+    "ExpandableItineraryCardGrid.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "ExpandableItineraryCardGrid.tsx: ExpandableItineraryCardGrid",
+    "ExpandableItineraryCardGrid.tsx: parseDay",
+    "ExpandableItineraryCardGrid.tsx: type ExpandableItineraryCardGridProps",
+    "ExpandableItineraryCardGrid.tsx: type ExtendableItineraryDay"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".expandable-demo-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f3f2ee",
+    "color": "#17201d"
+   },
+   "conflictsWith": []
+  },
+  "flexible-card-stack": {
+   "name": "flexible-card-stack",
+   "kind": "pattern",
+   "summary": "可放图片或任意 React 内容的层叠卡片",
+   "use_when": "轮播少量高亮点/评价/酒店设施卡(≤6)",
+   "avoid_when": "大数据集、多列列表、需同时比较",
+   "files": [
+    "components/ui/card-stack.tsx",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/card-stack.tsx: CardStack",
+    "components/ui/card-stack.tsx: type CardStackItem",
+    "components/ui/card-stack.tsx: type CardStackProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "flippable-itinerary-drag-card-stack": {
+   "name": "flippable-itinerary-drag-card-stack",
+   "kind": "effect",
+   "summary": "可拖拽循环叠卡，正面横拖切换，背面纵向滚动详情",
+   "use_when": "3 天以上、先看图再看详情的逐日行程",
+   "avoid_when": "需随机跳到某天、同时比较多天、编辑内容",
+   "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+   ],
+   "files": [
+    "FlippableItineraryDragCardStack.tsx",
+    "gesture-intent.ts",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "FlippableItineraryDragCardStack.tsx: FlippableItineraryDragCardStack",
+    "FlippableItineraryDragCardStack.tsx: classifyItineraryPointerIntent",
+    "FlippableItineraryDragCardStack.tsx: type FlippableItineraryDragCardStackProps",
+    "FlippableItineraryDragCardStack.tsx: type ItineraryCardItem",
+    "gesture-intent.ts: classifyItineraryPointerIntent",
+    "gesture-intent.ts: type GestureIntent"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".itinerary-fixture-shell",
+     ".itinerary-fixture-stage"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f4f3ef",
+    "color": "#17201d"
+   },
+   "conflictsWith": []
+  },
+  "focus-cards": {
+   "name": "focus-cards",
+   "kind": "pattern",
+   "summary": "3:4 图片卡网格：悬停时其余卡模糊，点开详情，支持分页",
+   "use_when": "视觉优先的产品/行程/酒店/亮点展示",
+   "avoid_when": "数据表格、纯文字列表、图片比例不固定",
+   "files": [
+    "data.ts",
+    "focus-cards.tsx",
+    "index.css",
+    "types.ts",
+    "usage.tsx"
+   ],
+   "exports": [
+    "data.ts: hotelCards",
+    "data.ts: tourCards",
+    "focus-cards.tsx: Card",
+    "focus-cards.tsx: FocusCards",
+    "types.ts: type FocusCardItem",
+    "types.ts: type FocusCardsProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/canvas-reveal-travel-narrative/local-table.webp",
+    "images/canvas-reveal-travel-narrative/mountain-lodge.webp",
+    "images/canvas-reveal-travel-narrative/mountain-route.webp"
+   ],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "frameless-cloud-shader-flight-hero": {
+   "name": "frameless-cloud-shader-flight-hero",
+   "kind": "section",
+   "summary": "全幅旅游 Hero：WebGL 云海 + 漂浮机翼 + 锚点按钮 + 目的地预览 + 线路目录",
+   "use_when": "要云海飞行氛围但不要舷窗边框的产品首屏",
+   "avoid_when": "不适合 WebGL、只需静态 Banner、文案超出层级；要拱形舷窗边框改用 plane-window-cloud-shader-hero（二者同源，仅边框不同，别同页混用）",
+   "files": [
+    "CloudShaderFlightHeroDemo.tsx",
+    "components/ui/cloud-shader.tsx",
+    "styles.css",
+    "travel-data.ts",
+    "usage.tsx"
+   ],
+   "exports": [
+    "CloudShaderFlightHeroDemo.tsx: CloudShaderFlightHeroDemo",
+    "components/ui/cloud-shader.tsx: CloudShader",
+    "components/ui/cloud-shader.tsx: type CloudShaderProps",
+    "travel-data.ts: destinations",
+    "travel-data.ts: heroContent",
+    "travel-data.ts: navigation",
+    "travel-data.ts: planeWing"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/air-travel-hero-raster/plane-wing.webp",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".flight-hero"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#fff"
+   },
+   "conflictsWith": []
+  },
+  "gooey-input": {
+   "name": "gooey-input",
+   "kind": "pattern",
+   "summary": "粘稠水滴融合的搜索框(SVG 模糊+阈值)，向右展开",
+   "use_when": "顶栏搜索、线路/产品轻量检索",
+   "avoid_when": "没有水平展开空间的窄表格单元格",
+   "files": [
+    "components/ui/gooey-input.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/gooey-input.tsx: GooeyInput",
+    "components/ui/gooey-input.tsx: type GooeyInputClassNames",
+    "components/ui/gooey-input.tsx: type GooeyInputProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "hero-parallax": {
+   "name": "hero-parallax",
+   "kind": "section",
+   "summary": "封面 + 三轨滚动视差的图片叙事界面",
+   "use_when": "首页、目的地、美食等以图片为主的展示",
+   "avoid_when": "需要长文、详细行程或参数对比；它不是无限跑马灯",
+   "files": [
+    "HeroParallaxDemo.tsx",
+    "hero-parallax.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "HeroParallaxDemo.tsx: HeroParallaxDemo",
+    "HeroParallaxDemo.tsx: products",
+    "hero-parallax.tsx: HeroParallax",
+    "hero-parallax.tsx: type Product"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".hp-gallery-stage"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "images-slider": {
+   "name": "images-slider",
+   "kind": "pattern",
+   "summary": "全景图片背景滑块，3D 景深切换",
+   "use_when": "全屏 Hero 背景、落地页尾屏、少字的图片叙事",
+   "avoid_when": "密集表格/表单、需要长文阅读",
+   "files": [
+    "components/ui/images-slider.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/images-slider.tsx: ImagesSlider",
+    "components/ui/images-slider.tsx: type ImagesSliderProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [
+    "images/forest-canopy.jpg",
+    "images/forest-lake.jpg",
+    "images/forest-road.jpg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "immersive-media-card-stack-showcase": {
+   "name": "immersive-media-card-stack-showcase",
+   "kind": "section",
+   "summary": "标题 + 说明 + 大图层叠卡片的完整展示章节",
+   "use_when": "目的地、酒店空间、美食、路线亮点等摄影主导内容",
+   "avoid_when": "文字密集的长文、对比表、20+ 图瀑布流",
+   "files": [
+    "components/ui/card-stack.tsx",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/card-stack.tsx: CardStack",
+    "components/ui/card-stack.tsx: type CardStackItem",
+    "components/ui/card-stack.tsx: type CardStackProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "inset-border-button": {
+   "name": "inset-border-button",
+   "kind": "pattern",
+   "summary": "深灰内描边胶囊按钮，悬停实色填充、文字变白",
+   "use_when": "次要行动、播放/详情切换、中性高级感界面",
+   "avoid_when": "页面唯一的核心转化按钮(应配主色按钮)",
+   "files": [
+    "components/ui/inset-border-button.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/inset-border-button.tsx: InsetBorderButton",
+    "components/ui/inset-border-button.tsx: type InsetBorderButtonProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "interactive-fill-arrow-button": {
+   "name": "interactive-fill-arrow-button",
+   "kind": "pattern",
+   "summary": "胶囊按钮：悬停时前导圆点扩成填充并把文字换成箭头，颜色走主题变量",
+   "use_when": "需要一次紧凑悬停确认的链接式/行动按钮",
+   "avoid_when": "纯图标按钮、高频工具栏、破坏性确认",
+   "files": [
+    "interactive-hover-button.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "interactive-hover-button.tsx: InteractiveHoverButton"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".page-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#fff",
+    "color": "#171717"
+   },
+   "conflictsWith": []
+  },
+  "invert-button": {
+   "name": "invert-button",
+   "kind": "pattern",
+   "summary": "Teal 反色翻转按钮，悬停背景与文字颜色互换",
+   "use_when": "‘确定’‘切换筛选’等明确的主要操作",
+   "avoid_when": "弱强调操作、多按钮紧挨的表单内",
+   "files": [
+    "components/ui/invert-button.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/invert-button.tsx: InvertButton",
+    "components/ui/invert-button.tsx: type InvertButtonProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "labeled-dual-row-image-marquee": {
+   "name": "labeled-dual-row-image-marquee",
+   "kind": "effect",
+   "summary": "同 continuous-dual-row-image-marquee，另加每行固定的极简标签",
+   "use_when": "每行图片需要固定分类/编辑标识时",
+   "avoid_when": "标签没有信息量时改用 continuous-dual-row-image-marquee；任务型选择、长文案",
+   "allow_missing": [
+    "/missing-preview-asset.svg"
+   ],
+   "files": [
+    "TravelImageMarquee.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "TravelImageMarquee.tsx: TravelImageMarquee",
+    "TravelImageMarquee.tsx: type MarqueeCard",
+    "TravelImageMarquee.tsx: type MarqueeRowLabel",
+    "TravelImageMarquee.tsx: type TravelImageMarqueeProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".fixture-shell"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f7f5ef",
+    "color": "#17202a"
+   },
+   "conflictsWith": []
+  },
+  "lit-up-borders-button": {
+   "name": "lit-up-borders-button",
+   "kind": "pattern",
+   "summary": "双层渐变霓虹边框按钮，悬停内层渐隐露出渐变边",
+   "use_when": "首屏、促销、会员充值等高调 CTA",
+   "avoid_when": "朴素工具型应用、后台报表、阅读型版面",
+   "files": [
+    "components/ui/lit-up-borders-button.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/lit-up-borders-button.tsx: LitUpBordersButton",
+    "components/ui/lit-up-borders-button.tsx: type LitUpBordersButtonProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "narrative-carousel-cinematic": {
+   "name": "narrative-carousel-cinematic",
+   "kind": "pattern",
+   "summary": "纯图电影式轮播：3D 景深 + 指针视差 + 宽幅标题",
+   "use_when": "图片主导、文字精简的目的地/酒店/品牌画卷",
+   "avoid_when": "长详情、逐日行程、密集数据、键盘高频切换",
+   "files": [
+    "components/ui/carousel.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/carousel.tsx: default Carousel",
+    "components/ui/carousel.tsx: type SlideData"
+   ],
+   "npm": {
+    "@tabler/icons-react": "^3.46.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "narrative-carousel-flip": {
+   "name": "narrative-carousel-flip",
+   "kind": "pattern",
+   "summary": "带按钮的图文轮播，卡片可 3D 翻到正反两面",
+   "use_when": "一张主图配分类/说明/卖点标签的目的地、酒店、餐饮档案",
+   "avoid_when": "只需纯图切换、超长文档、翻面会藏住关键操作",
+   "files": [
+    "components/ui/carousel.tsx",
+    "components/ui/interactive-hover-button.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/carousel.tsx: default Carousel",
+    "components/ui/carousel.tsx: type SlideData",
+    "components/ui/interactive-hover-button.tsx: InteractiveHoverButton",
+    "components/ui/interactive-hover-button.tsx: type InteractiveHoverButtonProps"
+   ],
+   "npm": {
+    "@tabler/icons-react": "^3.46.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "narrative-carousel-itinerary": {
+   "name": "narrative-carousel-itinerary",
+   "kind": "pattern",
+   "summary": "四槽 DAY 导航 + 横向手势 + 3D 时间轴翻面的逐日行程轮播",
+   "use_when": "旅游/研学/考察按天看主图、交通住宿餐食摘要、时间轴",
+   "avoid_when": "单图 Hero、无逐日结构、需一次比较全部日期",
+   "files": [
+    "components/ui/carousel.tsx",
+    "components/ui/interactive-hover-button.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/carousel.tsx: default Carousel",
+    "components/ui/carousel.tsx: type ItineraryNode",
+    "components/ui/carousel.tsx: type ItinerarySlideData",
+    "components/ui/carousel.tsx: type NodeType",
+    "components/ui/interactive-hover-button.tsx: InteractiveHoverButton",
+    "components/ui/interactive-hover-button.tsx: type InteractiveHoverButtonProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.16.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [
+    "styles.css"
+   ],
+   "v3BorderCompat": [
+    "styles.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "orbiting-image-details": {
+   "name": "orbiting-image-details",
+   "kind": "effect",
+   "summary": "1–2 圈环绕旋转的图片轨道，悬停/点击出方形详情卡",
+   "use_when": "1–9 张目的地/景点/团队图片的装饰性总览",
+   "avoid_when": "超过 9 项、任务型选择、长描述(改用网格/列表)",
+   "allow_missing": [
+    "/deliberately-missing.svg"
+   ],
+   "files": [
+    "OrbitingImageDetails.tsx",
+    "orbit-layout.ts",
+    "orbiting-circles.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "OrbitingImageDetails.tsx: OrbitingImageDetails",
+    "OrbitingImageDetails.tsx: type OrbitImageItem",
+    "OrbitingImageDetails.tsx: type OrbitingImageDetailsProps",
+    "orbit-layout.ts: MAX_ORBIT_ITEMS",
+    "orbit-layout.ts: isOrbitLayoutSuitable",
+    "orbit-layout.ts: splitOrbitItems",
+    "orbiting-circles.tsx: OrbitingCircles",
+    "orbiting-circles.tsx: type OrbitingCirclesProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "styles.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".fixture-page",
+     ".fixture-card"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f6f5f1",
+    "color": "#17201c"
+   },
+   "conflictsWith": []
+  },
+  "plane-window-cloud-shader-hero": {
+   "name": "plane-window-cloud-shader-hero",
+   "kind": "section",
+   "summary": "旅游 Hero：云海 + 机翼放进拱形舷窗框",
+   "use_when": "要电影感开场和舷窗主题，附两个锚点、目的地预览、线路目录",
+   "avoid_when": "不适合 WebGL、首屏不能太大、文案超过 2 行标题+3 行说明；不要舷窗边框的全幅版本用 frameless-cloud-shader-flight-hero（二者同源，别同页混用）",
+   "files": [
+    "CloudShaderPlaneWindowDemo.tsx",
+    "components/ui/cloud-shader.tsx",
+    "styles.css",
+    "travel-data.ts",
+    "usage.tsx"
+   ],
+   "exports": [
+    "CloudShaderPlaneWindowDemo.tsx: CloudShaderPlaneWindowDemo",
+    "components/ui/cloud-shader.tsx: CloudShader",
+    "components/ui/cloud-shader.tsx: type CloudShaderProps",
+    "travel-data.ts: destinations",
+    "travel-data.ts: heroContent",
+    "travel-data.ts: navigation",
+    "travel-data.ts: planeWing"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/air-travel-hero-raster/plane-wing.webp",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".window-view",
+     ".travel-scene"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "recycling-drag-card-stack": {
+   "name": "recycling-drag-card-stack",
+   "kind": "effect",
+   "summary": "横向拖拽叠卡：松手顶牌回弹并移到最后，下一张放大上位",
+   "use_when": "少量目的地/产品/作品序列，强调直接操作",
+   "avoid_when": "有序表单、任务型选择、需全部可见、少于 3 项",
+   "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+   ],
+   "files": [
+    "RecyclingDragCardStack.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "RecyclingDragCardStack.tsx: RecyclingDragCardStack",
+    "RecyclingDragCardStack.tsx: type DragCardItem",
+    "RecyclingDragCardStack.tsx: type RecyclingDragCardStackProps"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".fixture-page-shell",
+     ".fixture-demo-stage"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f4f3ef",
+    "color": "#17201d"
+   },
+   "conflictsWith": []
+  },
+  "shooting-stars-and-stars-background": {
+   "name": "shooting-stars-and-stars-background",
+   "kind": "effect",
+   "summary": "Canvas 闪烁星空 + SVG 流星的持续氛围背景",
+   "use_when": "深色底(neutral-900/黑)的 Hero、标题横幅背后",
+   "avoid_when": "浅色底(需反色)、密集文字页、当独立组件用",
+   "files": [
+    "shooting-stars.tsx",
+    "stars-background.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "shooting-stars.tsx: ShootingStars",
+    "shooting-stars.tsx: type ShootingStarsProps",
+    "stars-background.tsx: StarsBackground",
+    "stars-background.tsx: type StarsBackgroundProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "split-narrative-card-stack-section": {
+   "name": "split-narrative-card-stack-section",
+   "kind": "section",
+   "summary": "左文右层叠卡的响应式分栏章节",
+   "use_when": "卖点、酒店、美食、亮点、行程阶段的图文并列介绍",
+   "avoid_when": "无文字的全幅媒体 Hero、多页文档、密集表格",
+   "files": [
+    "components/ui/card-stack.tsx",
+    "index.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/card-stack.tsx: CardStack",
+    "components/ui/card-stack.tsx: type CardStackItem",
+    "components/ui/card-stack.tsx: type CardStackProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "spotify-pill-button": {
+   "name": "spotify-pill-button",
+   "kind": "pattern",
+   "summary": "Spotify 绿大圆角胶囊按钮，悬停微放大提亮",
+   "use_when": "播放控制、主要购买转化、需吸睛的大按钮",
+   "avoid_when": "紧凑列表行内操作、取消类按钮、严肃金融界面",
+   "files": [
+    "components/ui/spotify-pill-button.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/spotify-pill-button.tsx: SpotifyPillButton",
+    "components/ui/spotify-pill-button.tsx: type SpotifyPillButtonProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "staggered-bouncing-dot-loader": {
+   "name": "staggered-bouncing-dot-loader",
+   "kind": "effect",
+   "summary": "三点纵向交错弹跳的加载动画，带无障碍状态与减少动态适配",
+   "use_when": "异步加载、Suspense、路由等待",
+   "avoid_when": "要显示百分比、需要文字说明(改用字符脉冲)、无 JS 环境",
+   "files": [
+    "components/ui/loader.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/loader.tsx: LoaderOne"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "staggered-character-pulse-loader": {
+   "name": "staggered-character-pulse-loader",
+   "kind": "effect",
+   "summary": "逐字缩放/透明度/阴影脉冲的文字加载动画",
+   "use_when": "需要明确文字的加载提示(‘正在生成行程…’)",
+   "avoid_when": "无文字骨架屏、超长段落、不支持硬件加速的终端",
+   "files": [
+    "components/ui/loader.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/loader.tsx: LoaderFive"
+   ],
+   "npm": {
+    "motion": "^13.2.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "sticky-scroll-reveal": {
+   "name": "sticky-scroll-reveal",
+   "kind": "pattern",
+   "summary": "滚动驱动：左侧叙事文字 + 右侧吸顶视觉卡 + 呼吸模糊背景",
+   "use_when": "按步骤讲故事/产品特色/行程，每步一段文字配一张图",
+   "avoid_when": "不可当独立章节模板；无配图、全幅独立幻灯片、数据看板",
+   "files": [
+    "StickyScrollRevealDemo.tsx",
+    "components/ui/sticky-scroll-reveal.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "StickyScrollRevealDemo.tsx: StickyScrollRevealDemo",
+    "StickyScrollRevealDemo.tsx: content",
+    "components/ui/sticky-scroll-reveal.tsx: StickyScroll",
+    "components/ui/sticky-scroll-reveal.tsx: type StickyScrollItem",
+    "components/ui/sticky-scroll-reveal.tsx: type StickyScrollProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {
+    "background": "#090d16",
+    "color": "#f8fafc"
+   },
+   "conflictsWith": []
+  },
+  "tailwind-connect-button": {
+   "name": "tailwind-connect-button",
+   "kind": "pattern",
+   "summary": "暗色胶囊按钮，顶部径向泛光 + 底部发光光束",
+   "use_when": "科技感/暗色主视觉的单一高优先级 CTA",
+   "avoid_when": "高密度工具栏、纯白背景、要求无光效的极简页",
+   "files": [
+    "components/ui/tailwind-connect-button.tsx",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/ui/tailwind-connect-button.tsx: TailwindConnectButton",
+    "components/ui/tailwind-connect-button.tsx: type TailwindConnectButtonProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "themed-3d-scene-gallery": {
+   "name": "themed-3d-scene-gallery",
+   "kind": "section",
+   "summary": "全宽选中大图 Hero + 四轨 3D 滚动图墙，每图需配对比主题色",
+   "use_when": "有 8–20 张图且能为每张预先配好渐变主题",
+   "avoid_when": "图片少于 8 或多于 20、颜色无法预先分析、需连续阅读长文",
+   "allow_missing": [
+    "/missing-scene.svg"
+   ],
+   "files": [
+    "Themed3DSceneGallery.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "Themed3DSceneGallery.tsx: SCENE_THEME_GUIDE",
+    "Themed3DSceneGallery.tsx: Themed3DSceneGallery",
+    "Themed3DSceneGallery.tsx: type SceneGalleryItem",
+    "Themed3DSceneGallery.tsx: type SceneThemePreset",
+    "Themed3DSceneGallery.tsx: type Themed3DSceneGalleryProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {
+    "background": "#061011",
+    "color": "#f5f5f7"
+   },
+   "conflictsWith": []
+  },
+  "tracing-beam": {
+   "name": "tracing-beam",
+   "kind": "effect",
+   "summary": "沿内容容器随滚动延伸的 SVG 渐变光束",
+   "use_when": "长文、时间线、案例、步骤指南的侧边引导线",
+   "avoid_when": "横向滚动容器、短于 800px 的内容、无侧边留白的全幅布局",
+   "files": [
+    "components/TracingNarrativeContent.tsx",
+    "components/ui/tracing-beam.tsx",
+    "index.css",
+    "story-data.ts",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/TracingNarrativeContent.tsx: TracingNarrativeContent",
+    "components/ui/tracing-beam.tsx: TracingBeam",
+    "components/ui/tracing-beam.tsx: type TracingBeamProps",
+    "story-data.ts: defaultNarrativeItems",
+    "story-data.ts: type NarrativeItem"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg"
+   ],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "tracing-narrative-showcase": {
+   "name": "tracing-narrative-showcase",
+   "kind": "section",
+   "summary": "标题 + 图文节点 + 滚动光束的叙事章节",
+   "use_when": "景点导览、度假村设施、活动亮点、≤5 天短行程",
+   "avoid_when": "密集日程表、超过 6 个节点、商品网格、无侧边留白",
+   "files": [
+    "components/TracingNarrativeContent.tsx",
+    "components/TracingNarrativeShowcase.tsx",
+    "components/ui/tracing-beam.tsx",
+    "index.css",
+    "story-data.ts",
+    "usage.tsx"
+   ],
+   "exports": [
+    "components/TracingNarrativeContent.tsx: TracingNarrativeContent",
+    "components/TracingNarrativeShowcase.tsx: TracingNarrativeShowcase",
+    "components/TracingNarrativeShowcase.tsx: type TracingNarrativeShowcaseProps",
+    "components/ui/tracing-beam.tsx: TracingBeam",
+    "components/ui/tracing-beam.tsx: type TracingBeamProps",
+    "story-data.ts: defaultNarrativeItems",
+    "story-data.ts: type NarrativeItem"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "motion": "^13.2.0",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {
+    "lucide-react": "^1.16.0"
+   },
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [
+    "utils.ts"
+   ],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg"
+   ],
+   "css": [
+    "index.css"
+   ],
+   "cssNeedsTailwindEntry": [
+    "index.css"
+   ],
+   "themeTokens": [],
+   "v3BorderCompat": [
+    "index.css"
+   ],
+   "darkModeByClass": true,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "vertical-counterflow-story-gallery": {
+   "name": "vertical-counterflow-story-gallery",
+   "kind": "section",
+   "summary": "两列反向纵向滚动图墙 + 一块随悬停/点击更新的简短故事面板",
+   "use_when": "4–20 张图需要轻柔浏览，配一段精炼文字",
+   "avoid_when": "少于 4 张图、长文、任务型选择",
+   "allow_missing": [
+    "/missing-image.svg"
+   ],
+   "files": [
+    "VerticalCounterflowStoryGallery.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "VerticalCounterflowStoryGallery.tsx: VerticalCounterflowStoryGallery",
+    "VerticalCounterflowStoryGallery.tsx: type StoryGalleryItem",
+    "VerticalCounterflowStoryGallery.tsx: type VerticalCounterflowStoryGalleryProps"
+   ],
+   "npm": {},
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [
+    "images/travel-landscape-svg/coast.svg",
+    "images/travel-landscape-svg/forest.svg",
+    "images/travel-landscape-svg/glacier.svg",
+    "images/travel-landscape-svg/green-hills.svg",
+    "images/travel-landscape-svg/lake.svg",
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": false,
+   "globalCss": {},
+   "fullViewport": {
+    "styles.css": [
+     ".vc-story",
+     ".vc-story__gallery"
+    ]
+   },
+   "problems": [],
+   "pageStyle": {
+    "background": "#f5f5f7",
+    "color": "#1d1d1f"
+   },
+   "conflictsWith": []
+  },
+  "vortex-particle-field": {
+   "name": "vortex-particle-field",
+   "kind": "effect",
+   "summary": "基于 simplex-noise 的粒子背景，含萤火预设",
+   "use_when": "深色底卡片/Hero/夜景/萤火主题的氛围背景",
+   "avoid_when": "当独立组件或完整章节用、浅色底、密集表格",
+   "files": [
+    "styles.css",
+    "usage.tsx",
+    "vortex.tsx"
+   ],
+   "exports": [
+    "vortex.tsx: FIREFLY_VORTEX_PRESET",
+    "vortex.tsx: Vortex",
+    "vortex.tsx: cn",
+    "vortex.tsx: type VortexProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "simplex-noise": "4.0.3",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {},
+   "conflictsWith": []
+  },
+  "webgl-chromatic-aberration-hero": {
+   "name": "webgl-chromatic-aberration-hero",
+   "kind": "section",
+   "summary": "全幅 Hero：指针驱动的 WebGL 色散倾斜 + 滚动玻璃导航 + 目录展开 + 回顶部",
+   "use_when": "深色旅游/产品开场，一张风光图加微妙景深",
+   "avoid_when": "图中有重要文字/UI、浅色主题(需调遮罩)、性能预算不容 WebGL",
+   "allow_missing": [
+    "/images/missing-preview.svg"
+   ],
+   "files": [
+    "Hero.tsx",
+    "styles.css",
+    "usage.tsx"
+   ],
+   "exports": [
+    "Hero.tsx: WebGLChromaticHero",
+    "Hero.tsx: type WebGLHeroProps"
+   ],
+   "npm": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.6.0"
+   },
+   "types": {},
+   "usageNpm": {},
+   "usageTypes": {},
+   "peer": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+   },
+   "shared": [],
+   "public": [
+    "images/travel-landscape-svg/stars.svg"
+   ],
+   "importedAssets": [],
+   "css": [
+    "styles.css"
+   ],
+   "cssNeedsTailwindEntry": [],
+   "themeTokens": [],
+   "v3BorderCompat": [],
+   "darkModeByClass": false,
+   "tailwind": {
+    "required": ">=4"
+   },
+   "globalCss": {},
+   "fullViewport": {},
+   "problems": [],
+   "pageStyle": {
+    "background": "#081d3b"
+   },
+   "conflictsWith": []
+  }
+ }
+}

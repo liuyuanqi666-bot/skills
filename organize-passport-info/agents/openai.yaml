@@ -1,0 +1,6 @@
+interface:
+  display_name: "护照信息整理"
+  short_description: "先核对领队证件，再按固定模板整理、复核并导出团队护照名单"
+  default_prompt: "使用 $organize-passport-info 先核对领队文字或护照照片，再将领队置顶并按内置模板整理团队护照名单。"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"

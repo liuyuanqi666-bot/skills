@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "../../assets/components/black-meteor-shower/styles.css";
+
+/* --- styles.css 中的页面级规则 --- */
+* { box-sizing: border-box; }
+
+body { min-width: 320px; min-height: 100vh; margin: 0; background: #fff; }

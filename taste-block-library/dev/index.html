@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taste Blocks · 组件展示</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./showcase/showcase.css" />
+  </head>
+  <body>
+    <aside class="side">
+      <header class="brand">
+        <h1>Taste Blocks</h1>
+        <p id="count"></p>
+      </header>
+      <input id="q" type="search" placeholder="搜索名称 / 用途 / 依赖…" autocomplete="off" />
+      <div id="kinds" class="kinds"></div>
+      <nav id="list" class="list"></nav>
+    </aside>
+    <main class="main">
+      <div class="bar">
+        <h2 id="title"></h2>
+        <div class="seg" id="vp">
+          <button data-w="100%" class="on">桌面</button>
+          <button data-w="768px">平板</button>
+          <button data-w="390px">手机</button>
+        </div>
+        <button id="reload" title="重新加载（重放入场动画）">↻</button>
+        <a id="open" target="_blank" rel="noreferrer">新页面打开 ↗</a>
+      </div>
+      <div class="stage"><iframe id="frame" title="组件预览"></iframe></div>
+    </main>
+    <aside class="info" id="info"></aside>
+    <script type="module" src="./showcase/showcase.js"></script>
+  </body>
+</html>

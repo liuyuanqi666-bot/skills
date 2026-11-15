@@ -1,0 +1,57 @@
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+.animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+
+.aurora-canvas {
+  position: absolute;
+  inset: -10px;
+  pointer-events: none;
+  opacity: 0.5;
+  filter: blur(10px) invert(1);
+  will-change: transform;
+  background-image: var(--white-gradient), var(--aurora);
+  background-size: 300% 200%;
+  background-position: 50% 50%, 50% 50%;
+}
+
+.dark .aurora-canvas {
+  background-image: var(--dark-gradient), var(--aurora);
+  filter: blur(10px) invert(0);
+}
+
+.aurora-canvas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: difference;
+  background-image: var(--white-gradient), var(--aurora);
+  background-size: 200% 100%;
+  animation: aurora 60s linear infinite;
+}
+
+.dark .aurora-canvas::after {
+  background-image: var(--dark-gradient), var(--aurora);
+}
+
+.aurora-canvas.is-fixed::after {
+  background-attachment: fixed;
+}
+
+.aurora-mask-center {
+  mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, black 40%, transparent 85%);
+}
+
+.aurora-mask-directional {
+  mask-image: radial-gradient(ellipse at 100% 0%, black 15%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 100% 0%, black 15%, transparent 75%);
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "旅游产品标题策划"
+  short_description: "读取春秋后台行程与费用，生成有据可核验的旅游产品标题"
+  default_prompt: "使用 $travel-product-title-planner 根据我提供的春秋后台产品ID核验行程并生成产品标题。"

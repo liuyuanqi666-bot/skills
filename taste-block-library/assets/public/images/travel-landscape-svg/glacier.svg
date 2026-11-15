@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 423" role="img" aria-label="高山冰川插画">
+  <defs><linearGradient id="b" x2="0" y2="1"><stop stop-color="#b9e3f4"/><stop offset="1" stop-color="#eaf4f2"/></linearGradient><linearGradient id="i" x2="0" y2="1"><stop stop-color="#9fe0ec"/><stop offset="1" stop-color="#237797"/></linearGradient></defs>
+  <rect width="720" height="423" fill="url(#b)"/><path d="M0 321 161 108l80 99L350 50l167 205 73-85 130 151Z" fill="#6d8794"/><path d="m161 108 80 99L350 50l167 205-169-109-65 104-58-19Z" fill="#fff"/><path d="M244 238q101-20 232 9l-77 176H182Z" fill="url(#i)"/><path d="m298 250 22 173m48-177-8 177m67-169-33 169" stroke="#d9fbff" stroke-width="11" opacity=".74"/>
+</svg>

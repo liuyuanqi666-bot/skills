@@ -1,0 +1,39 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+/* Tailwind v3 -> v4 兼容：保留 v3 默认的边框颜色 */
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+
+:root {
+  --background: 40 18% 97%;
+  --foreground: 220 20% 12%;
+  --border: 35 12% 84%;
+  --primary: 156 38% 32%;
+  --primary-foreground: 40 20% 98%;
+  --muted: 35 12% 90%;
+  --muted-foreground: 220 10% 45%;
+}
+
+
+.font-serif {
+  font-family: "Noto Serif SC", "Songti SC", "Source Han Serif SC", SimSun, Georgia, serif;
+}
+
+
+/* 优雅平滑滚轴与焦点环 */
+.narrative-carousel button:focus-visible,
+.narrative-carousel a:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 3px;
+}

@@ -1,0 +1,6 @@
+{
+  "kind": "section",
+  "summary": "旅游 Hero：云海 + 机翼放进拱形舷窗框",
+  "use_when": "要电影感开场和舷窗主题，附两个锚点、目的地预览、线路目录",
+  "avoid_when": "不适合 WebGL、首屏不能太大、文案超过 2 行标题+3 行说明；不要舷窗边框的全幅版本用 frameless-cloud-shader-flight-hero（二者同源，别同页混用）"
+}

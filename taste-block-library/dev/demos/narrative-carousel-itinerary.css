@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "../../assets/components/narrative-carousel-itinerary/styles.css";
+
+/* --- styles.css 中的页面级规则 --- */
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

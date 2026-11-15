@@ -1,0 +1,6 @@
+{
+  "kind": "effect",
+  "summary": "Canvas 闪烁星空 + SVG 流星的持续氛围背景",
+  "use_when": "深色底(neutral-900/黑)的 Hero、标题横幅背后",
+  "avoid_when": "浅色底(需反色)、密集文字页、当独立组件用"
+}

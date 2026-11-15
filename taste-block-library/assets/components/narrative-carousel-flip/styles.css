@@ -1,0 +1,73 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+/* Tailwind v3 -> v4 兼容：保留 v3 默认的边框颜色 */
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+
+:root {
+  --background: 40 18% 97%;
+  --foreground: 220 20% 12%;
+  --border: 35 12% 84%;
+  --primary: 156 38% 32%;
+  --primary-foreground: 40 20% 98%;
+  --muted: 35 12% 90%;
+  --muted-foreground: 220 10% 45%;
+}
+
+
+.font-serif {
+  font-family: "Noto Serif SC", "Songti SC", "Source Han Serif SC", SimSun, Georgia, serif;
+}
+
+
+/* 优雅平滑滚轴与焦点环 */
+.narrative-carousel button:focus-visible,
+.narrative-carousel a:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 3px;
+}
+
+
+/* 自定义卡片背面优雅细滚动条 */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+/* 隐藏横向 Tabs 的滚动条 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

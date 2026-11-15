@@ -1,0 +1,25 @@
+@import "./components/ui/aurora-background.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from { background-position: 50% 50%, 50% 50%; }
+    to { background-position: 350% 50%, 350% 50%; }
+  }
+}
+
+
+
+/* Tailwind v3 -> v4 兼容：保留 v3 默认的边框颜色 */
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}

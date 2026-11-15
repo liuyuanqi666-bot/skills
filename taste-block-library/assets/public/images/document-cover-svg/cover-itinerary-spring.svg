@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 480">
+  <rect width="360" height="480" rx="28" fill="#F8ECE8"/>
+  <rect x="28" y="28" width="74" height="28" rx="14" fill="#9D2F24"/>
+  <text x="65" y="47" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">PDF</text>
+  <text x="28" y="112" fill="#A65B51" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">LUNAR NEW YEAR</text>
+  <text x="28" y="190" fill="#401A17" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="46" font-weight="700">春节行程</text>
+  <text x="28" y="235" fill="#7A3D35" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22">南北岛 · 12 天</text>
+  <circle cx="275" cy="360" r="92" fill="#E6B2A8"/>
+  <circle cx="275" cy="360" r="62" fill="#C76357"/>
+  <circle cx="275" cy="360" r="30" fill="#9D2F24"/>
+  <text x="28" y="438" fill="#7A3D35" font-family="Arial, sans-serif" font-size="15" font-weight="700">9 PAGES</text>
+</svg>

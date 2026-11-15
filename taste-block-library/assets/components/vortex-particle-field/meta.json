@@ -1,0 +1,6 @@
+{
+  "kind": "effect",
+  "summary": "基于 simplex-noise 的粒子背景，含萤火预设",
+  "use_when": "深色底卡片/Hero/夜景/萤火主题的氛围背景",
+  "avoid_when": "当独立组件或完整章节用、浅色底、密集表格"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "section",
+  "summary": "全幅 Hero：指针驱动的 WebGL 色散倾斜 + 滚动玻璃导航 + 目录展开 + 回顶部",
+  "use_when": "深色旅游/产品开场，一张风光图加微妙景深",
+  "avoid_when": "图中有重要文字/UI、浅色主题(需调遮罩)、性能预算不容 WebGL",
+  "allow_missing": [
+    "/images/missing-preview.svg"
+  ]
+}

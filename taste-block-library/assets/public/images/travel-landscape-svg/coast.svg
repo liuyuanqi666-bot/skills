@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 423" role="img" aria-label="雪山海岸与鲸尾插画">
+  <defs><linearGradient id="a" x2="0" y2="1"><stop stop-color="#8bc8e2"/><stop offset=".62" stop-color="#dcecf1"/><stop offset=".63" stop-color="#2f7d91"/><stop offset="1" stop-color="#123d58"/></linearGradient></defs>
+  <rect width="720" height="423" fill="url(#a)"/><path d="M0 234 110 125l58 54 74-105 105 149 85-82 86 95Z" fill="#d6e5e8"/><path d="m109 125 59 54 74-105 105 149-91-71-40 32-49 3Z" fill="#fff"/><path d="M378 333q-42-58-95-31 36 6 62 45-41-19-75 9 61 17 108-23Zm8 0q42-58 95-31-36 6-62 45 41-19 75 9-61 17-108-23Z" fill="#132633"/><path d="M382 327q-2 44 9 73" stroke="#132633" stroke-width="14" stroke-linecap="round"/><path d="M0 352q90-24 180 0t180 0 180 0 180 0" fill="none" stroke="#b9e7ef" stroke-width="6" opacity=".7"/>
+</svg>

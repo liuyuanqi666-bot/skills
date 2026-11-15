@@ -1,0 +1,4 @@
+interface:
+  display_name: "分房名单整理"
+  short_description: "核对资料与分房方案，按固定格式制表并清理末行以下格式"
+  default_prompt: "使用 $organize-rooming-list 核对资料和分房方案，按固定航班格式生成分房名单，并确保人员末行之后没有多余表格。"

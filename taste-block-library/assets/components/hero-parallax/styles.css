@@ -1,0 +1,277 @@
+/* ── Header（还原官方布局，参与整体上滚）──────────────────── */
+.hp-header {
+  max-width: 80rem;          /* max-w-7xl */
+  position: relative;
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+
+@media (min-width: 768px) {
+
+  .hp-header {
+    padding: 10rem 1rem;
+  }
+}
+
+
+/* 官方: text-2xl md:text-7xl font-bold dark:text-white */
+.hp-title {
+  font-size: 1.5rem;         /* text-2xl */
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+
+@media (min-width: 768px) {
+
+  .hp-title {
+    font-size: 4.5rem;       /* text-7xl */
+  }
+}
+
+
+/* 官方: max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 */
+.hp-desc {
+  max-width: 42rem;
+  margin-top: 32px;
+  font-size: 1rem;
+  color: rgba(229, 229, 229, 0.85); /* dark:text-neutral-200 */
+  line-height: 1.65;
+}
+
+
+@media (min-width: 768px) {
+
+  .hp-desc {
+    font-size: 1.25rem;      /* text-xl */
+  }
+}
+
+
+/* ── 卡片行（官方间距）── */
+.hp-row {
+  display: flex;
+  gap: 5rem;                 /* 官方 space-x-20 (5rem = 80px) */
+  margin-bottom: 5rem;       /* 官方 mb-20 (5rem = 80px) */
+}
+
+
+.hp-row-normal {
+  flex-direction: row !important;
+}
+
+
+.hp-row-reverse {
+  flex-direction: row-reverse !important;
+}
+
+
+/* ── 卡片（官方原始尺寸）────────────────── */
+.hp-card {
+  position: relative;
+  flex-shrink: 0;
+  height: 24rem;             /* 官方 h-96 (24rem = 384px) */
+  width: 30rem;              /* 官方 w-[30rem] (480px) */
+  overflow: hidden;
+  cursor: default;
+  will-change: transform;
+}
+
+
+/* 官方: block group-hover/product:shadow-2xl */
+.hp-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+
+/* 官方: object-cover object-left-top absolute h-full w-full inset-0 */
+.hp-card-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+/* 官方: absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black */
+.hp-card-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+.hp-card[data-selected="true"] .hp-card-overlay {
+  opacity: 0.8;
+}
+
+
+/* 官方: absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white */
+.hp-card-title {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+
+.hp-card[data-selected="true"] .hp-card-title {
+  opacity: 1;
+}
+
+
+/* 同一固定舞台贯穿首页、透视展开和横向播放。 */
+.hp-gallery {
+  position: relative;
+}
+
+
+.hp-gallery-stage {
+  position: sticky;
+  top: 0;
+  height: var(--app-viewport-height, 100svh);
+  overflow: clip;
+  background: #000;
+}
+
+
+.hp-container {
+  height: 300vh;
+  padding: 10rem 0;
+  overflow: visible;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+
+.hp-tracks {
+  will-change: transform;
+}
+
+
+.hp-mobile-break {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+
+  .hp-header {
+    padding: 3.5rem 24px 4rem;
+  }
+
+
+  .hp-title {
+    font-size: clamp(32px, 9vw, 40px);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    text-shadow: 0 2px 24px rgba(0, 0, 0, 0.4);
+  }
+
+
+  .hp-mobile-break {
+    display: block;
+  }
+
+
+  .hp-desc {
+    max-width: 32ch;
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.75;
+    color: rgba(229, 229, 229, 0.8);
+    text-wrap: pretty;
+  }
+
+
+  .hp-gallery-stage {
+    touch-action: pan-y pinch-zoom;
+  }
+
+
+  .hp-card-title {
+    right: 16px;
+    pointer-events: none;
+    text-shadow: 0 1px 6px #000;
+  }
+}
+
+
+/* ── 性能优化 ─────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+
+  .hp-card-overlay,
+.hp-card-title {
+    transition: none;
+  }
+}
+
+
+/* 中间尺寸与矮屏同步收紧文字区，避免桌面字号突然挤满平板。 */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .hp-header { padding: clamp(48px, 8vw, 96px) 24px; }
+
+  .hp-title { font-size: clamp(36px, 5vw, 60px); }
+
+  .hp-desc { font-size: 17px; max-width: 38ch; }
+}
+
+@media (max-width: 767px) {
+
+  .hp-container { padding-top: 80px; }
+}
+
+@media (max-height: 600px) {
+
+  .hp-container { padding-top: 32px; }
+
+  .hp-header { padding-top: 32px; padding-bottom: 32px; }
+
+  .hp-title { font-size: clamp(28px, 4vw, 42px); }
+
+  .hp-desc { margin-top: 16px; font-size: 14px; line-height: 1.5; }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .hp-card:hover .hp-card-overlay { opacity: 0.8; }
+
+  .hp-card:hover .hp-card-title { opacity: 1; }
+}
+
+@media (max-width: 767px) {
+
+  /* A stable expanded viewport keeps the scroll path independent of browser chrome. */
+  .hp-gallery-stage { height: 100lvh; }
+}

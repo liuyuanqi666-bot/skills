@@ -1,0 +1,4 @@
+/* 响应式萤火粒子环境微调 */
+.vortex-card-shadow {
+  box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.15);
+}

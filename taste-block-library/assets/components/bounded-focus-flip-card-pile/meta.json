@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "可自由拖拽的 3D 卡堆，选中卡飞到舞台中央放大并翻面看详情",
+  "use_when": "少量图片集合，强调手感和逐项讲述",
+  "avoid_when": "长/动态列表、排序数据、键盘优先、需原生滚动的页面",
+  "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+  ]
+}

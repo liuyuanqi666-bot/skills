@@ -1,0 +1,4 @@
+interface:
+  display_name: "出行通知书制作"
+  short_description: "使用内置Word空模板保真制作出行通知书并完成内容、格式与视觉核对"
+  default_prompt: "使用 $create-travel-notice 的内置空模板根据行程资料制作出行通知书；资料不完整时先向我确认。"

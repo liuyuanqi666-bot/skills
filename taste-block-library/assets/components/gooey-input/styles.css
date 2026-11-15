@@ -1,0 +1,82 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-gooey-border: hsl(var(--gooey-border));
+  --color-gooey-input: hsl(var(--gooey-input));
+  --color-gooey-ring: hsl(var(--gooey-ring));
+  --color-gooey-background: hsl(var(--gooey-background));
+  --color-gooey-foreground: hsl(var(--gooey-foreground));
+  --color-gooey-primary: hsl(var(--gooey-primary));
+  --color-gooey-primary-foreground: hsl(var(--gooey-primary-foreground));
+  --color-gooey-secondary: hsl(var(--gooey-secondary));
+  --color-gooey-secondary-foreground: hsl(var(--gooey-secondary-foreground));
+  --color-gooey-muted: hsl(var(--gooey-muted));
+  --color-gooey-muted-foreground: hsl(var(--gooey-muted-foreground));
+  --color-gooey-accent: hsl(var(--gooey-accent));
+  --color-gooey-accent-foreground: hsl(var(--gooey-accent-foreground));
+  --color-gooey-card: hsl(var(--gooey-card));
+  --color-gooey-card-foreground: hsl(var(--gooey-card-foreground));
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+
+
+/* Tailwind v3 -> v4 兼容：保留 v3 默认的边框颜色 */
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+
+@layer base {
+
+  :root {
+  --gooey-background: 0 0% 100%;
+  --gooey-foreground: 240 10% 3.9%;
+  --gooey-card: 0 0% 100%;
+  --gooey-card-foreground: 240 10% 3.9%;
+  --gooey-popover: 0 0% 100%;
+  --gooey-popover-foreground: 240 10% 3.9%;
+  --gooey-primary: 240 5.9% 10%;
+  --gooey-primary-foreground: 0 0% 98%;
+  --gooey-secondary: 240 4.8% 95.9%;
+  --gooey-secondary-foreground: 240 5.9% 10%;
+  --gooey-muted: 240 4.8% 95.9%;
+  --gooey-muted-foreground: 240 3.8% 46.1%;
+  --gooey-accent: 240 4.8% 95.9%;
+  --gooey-accent-foreground: 240 5.9% 10%;
+  --gooey-border: 240 5.9% 90%;
+  --gooey-input: 240 5.9% 90%;
+  --gooey-ring: 240 5.9% 10%;
+  --radius: 0.5rem;
+}
+
+
+  .dark {
+    --gooey-background: 240 10% 3.9%;
+    --gooey-foreground: 0 0% 98%;
+    --gooey-card: 240 10% 3.9%;
+    --gooey-card-foreground: 0 0% 98%;
+    --gooey-popover: 240 10% 3.9%;
+    --gooey-popover-foreground: 0 0% 98%;
+    --gooey-primary: 0 0% 98%;
+    --gooey-primary-foreground: 240 5.9% 10%;
+    --gooey-secondary: 240 3.7% 15.9%;
+    --gooey-secondary-foreground: 0 0% 98%;
+    --gooey-muted: 240 3.7% 15.9%;
+    --gooey-muted-foreground: 240 5% 64.9%;
+    --gooey-accent: 240 3.7% 15.9%;
+    --gooey-accent-foreground: 0 0% 98%;
+    --gooey-border: 240 3.7% 15.9%;
+    --gooey-input: 240 3.7% 15.9%;
+    --gooey-ring: 240 4.9% 83.9%;
+  }
+}

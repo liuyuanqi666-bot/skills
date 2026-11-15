@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "1–2 圈环绕旋转的图片轨道，悬停/点击出方形详情卡",
+  "use_when": "1–9 张目的地/景点/团队图片的装饰性总览",
+  "avoid_when": "超过 9 项、任务型选择、长描述(改用网格/列表)",
+  "allow_missing": [
+    "/deliberately-missing.svg"
+  ]
+}

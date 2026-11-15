@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 423" role="img" aria-label="仰望森林树冠插画">
+  <defs><radialGradient id="l"><stop stop-color="#fff5c3"/><stop offset=".38" stop-color="#91cda7"/><stop offset="1" stop-color="#173f37"/></radialGradient></defs>
+  <rect width="720" height="423" fill="url(#l)"/><g stroke-linecap="round"><path d="M26 446 244 105" stroke="#342b24" stroke-width="42"/><path d="M690 450 500 76" stroke="#413129" stroke-width="48"/><path d="M158 440 308 85" stroke="#4a372b" stroke-width="29"/><path d="M556 447 422 90" stroke="#332a23" stroke-width="34"/></g><g fill="#204f3c" opacity=".9"><circle cx="150" cy="91" r="92"/><circle cx="298" cy="62" r="80"/><circle cx="454" cy="50" r="95"/><circle cx="600" cy="92" r="105"/></g><circle cx="365" cy="118" r="58" fill="#fff1b4" opacity=".78"/>
+</svg>

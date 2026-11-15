@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "../../assets/components/document-pack-preview-badge/styles.css";
+
+/* --- styles.css 中的页面级规则 --- */
+:root {
+  color: #171717;
+  background: #f7f7f5;
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  font-synthesis: none;
+}
+
+
+* { box-sizing: border-box; }
+
+body { min-width: 0; min-height: 100vh; margin: 0; }

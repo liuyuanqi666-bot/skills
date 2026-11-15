@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "可拖拽循环叠卡，正面横拖切换，背面纵向滚动详情",
+  "use_when": "3 天以上、先看图再看详情的逐日行程",
+  "avoid_when": "需随机跳到某天、同时比较多天、编辑内容",
+  "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+  ]
+}

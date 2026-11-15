@@ -1,0 +1,9 @@
+{
+  "kind": "pattern",
+  "summary": "文档包按钮：桌面扇形预览 3 张封面，点开列出全部可下载文件",
+  "use_when": "多个相关文件(行程/签证/表格)合并成一个下载入口",
+  "avoid_when": "只有一个文件、需先比较内容、下载需鉴权",
+  "allow_missing": [
+    "/missing-document-cover.svg"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "同 continuous-dual-row-image-marquee，另加每行固定的极简标签",
+  "use_when": "每行图片需要固定分类/编辑标识时",
+  "avoid_when": "标签没有信息量时改用 continuous-dual-row-image-marquee；任务型选择、长文案",
+  "allow_missing": [
+    "/missing-preview-asset.svg"
+  ]
+}

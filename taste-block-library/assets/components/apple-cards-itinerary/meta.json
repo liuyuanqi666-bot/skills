@@ -1,0 +1,6 @@
+{
+  "kind": "section",
+  "summary": "苹果风逐日行程：横滑卡片 + 点开详情浮层(Bento/多图)",
+  "use_when": "4–8 天、每天内容丰富的完整行程章节",
+  "avoid_when": "少于 3 张卡或简单列表；只要卡片动效时单独取 Card/Carousel"
+}

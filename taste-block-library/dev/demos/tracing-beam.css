@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "../../assets/components/tracing-beam/index.css";
+
+/* --- index.css 中的页面级规则 --- */
+html {
+  scroll-behavior: smooth;
+}

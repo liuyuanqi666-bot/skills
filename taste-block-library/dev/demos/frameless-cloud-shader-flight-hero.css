@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "../../assets/components/frameless-cloud-shader-flight-hero/styles.css";
+
+/* --- styles.css 中的页面级规则 --- */
+:root {
+  font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-synthesis: none;
+}
+
+
+html { scroll-behavior: smooth; }
+
+body { margin: 0; background: #fff; }
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  html { scroll-behavior: auto; }
+}

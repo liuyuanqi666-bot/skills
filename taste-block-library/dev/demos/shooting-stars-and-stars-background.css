@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+
+/* --- styles.css 中的页面级规则 --- */
+:root {
+  color-scheme: dark;
+}

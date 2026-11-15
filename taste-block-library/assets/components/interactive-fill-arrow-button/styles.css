@@ -1,0 +1,17 @@
+@theme inline {
+  --color-background: var(--button-background);
+  --color-primary: var(--button-fill);
+  --color-primary-foreground: var(--button-fill-foreground);
+}
+
+
+:root {
+  --button-background: #fff;
+  --button-fill: #171717;
+  --button-fill-foreground: #fff;
+}
+
+/* 原先是全局 button { font: inherit }（无层，压过 font-semibold 等工具类）；收窄到本组件按钮，外观不变 */
+.interactive-fill-button { font: inherit; }
+
+.page-shell { min-height: 100svh; display: grid; place-items: center; padding: 24px; background: #fff; }

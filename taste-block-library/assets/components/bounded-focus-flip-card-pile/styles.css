@@ -1,0 +1,274 @@
+.fixture-shell { line-height: normal; font-family: system-ui, sans-serif; color: #292524; background: #f5f5f4;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 18px;
+  height: 100svh;
+  padding: clamp(24px, 4vw, 56px);
+  overflow: hidden;
+}
+
+
+.fixture-heading {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  text-align: center;
+}
+
+
+.fixture-heading p { margin: 0; color: #78716c; font-size: 10px; font-weight: 750; letter-spacing: 0.24em; }
+
+.fixture-heading h1 { margin: 0; font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 4vw, 48px); font-weight: 500; letter-spacing: -0.04em; }
+
+.fixture-heading span { color: #a8a29e; font-size: 12px; }
+
+
+.fixture-stage {
+  --bounded-focus-card-size: min(20rem, calc(100vw - 4rem), 70cqh);
+  position: relative;
+  min-height: 0;
+  overflow: clip;
+  border: 1px solid rgb(41 37 36 / 0.06);
+  border-radius: 24px;
+  background: rgb(255 255 255 / 0.72);
+  perspective: 3000px;
+  container-type: size;
+}
+
+
+.fixture-prompt {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  width: min(420px, 82%);
+  margin: 0;
+  translate: -50% -50%;
+  color: #d6d3d1;
+  font-size: clamp(25px, 4vw, 44px);
+  font-weight: 850;
+  line-height: 1.05;
+  text-align: center;
+  pointer-events: none;
+}
+
+
+.bounded-focus-card {
+  position: absolute;
+  width: var(--bounded-focus-card-size);
+  aspect-ratio: 1 / 1.18;
+  overflow: visible;
+  outline: none;
+  touch-action: none;
+  opacity: 1;
+  transition: rotate 300ms cubic-bezier(0.77, 0, 0.175, 1);
+  container-type: inline-size;
+}
+
+
+.bounded-focus-card-flipper,
+.bounded-focus-card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+}
+
+
+.bounded-focus-card-flipper {
+  transform-style: preserve-3d;
+  box-shadow: 0 24px 54px rgb(23 23 23 / 0.22);
+}
+
+
+.bounded-focus-card-tilt {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+
+.bounded-focus-card-face {
+  overflow: hidden;
+  background: #fafaf9;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.bounded-focus-card-front { padding: 1.5rem; }
+
+.bounded-focus-card-media {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #e7e5e4;
+}
+
+.bounded-focus-card-media > img,
+.bounded-focus-card-media > .demo-image-fallback {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--bounded-focus-front-media-position, 50% 50%);
+}
+
+.demo-image-fallback { display: grid; place-items: center; background: #e7e5e4; color: #78716c; font-size: 12px; }
+
+.bounded-focus-card-front h2 { margin: clamp(0.5rem, 5cqi, 1rem) 0 0; color: #57534e; font-size: clamp(1rem, 7.5cqi, 1.5rem); text-align: center; }
+
+
+.bounded-focus-card-back {
+  color: #292524;
+  background: #fafaf9;
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+
+.bounded-focus-card-back-content { transform-origin: left top; }
+
+.bounded-focus-card-back-scroll { height: 100%; padding: 16px; overflow: auto; overscroll-behavior: contain; scrollbar-width: none; -ms-overflow-style: none; }
+
+.bounded-focus-card-back-scroll::-webkit-scrollbar { display: none; }
+
+
+.bounded-focus-card-open {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.bounded-focus-card-open:focus-visible,
+.bounded-focus-card-close:focus-visible { outline: 3px solid #2563eb; outline-offset: -4px; }
+
+
+.bounded-focus-card-close {
+  position: absolute;
+  z-index: 5;
+  display: grid;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  color: #57534e;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.bounded-focus-card-close::before {
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgb(38 38 38 / 0.09);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.92);
+  box-shadow: 0 4px 14px rgb(28 25 23 / 0.1), inset 0 1px 0 white;
+  content: "";
+  transition: background-color 160ms cubic-bezier(0.23, 1, 0.32, 1), transform 160ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+.bounded-focus-card-close svg { position: relative; z-index: 1; width: 11px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-width: 1.35; }
+
+.bounded-focus-card-backdrop { position: absolute; z-index: 40; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: rgb(28 25 23 / 0.44); backdrop-filter: blur(10px); cursor: zoom-out; }
+
+.bounded-focus-card[data-obscured="true"] { pointer-events: none; }
+
+.bounded-focus-card[data-focused="true"] { touch-action: pan-y; z-index: 50; rotate: 0deg !important; cursor: default; }
+
+.bounded-focus-card[data-returning="true"] { z-index: 50; pointer-events: none; }
+
+.bounded-focus-card[data-focused="true"] .bounded-focus-card-front { pointer-events: none; }
+
+.bounded-focus-card[data-focused="true"] .bounded-focus-card-back { pointer-events: auto; }
+
+
+.demo-card-1 { top: 12%; left: 31%; rotate: -7deg; }
+
+.demo-card-2 { top: 16%; left: 34%; rotate: -4deg; }
+
+.demo-card-3 { top: 8%; left: 43%; rotate: 8deg; }
+
+.demo-card-4 { top: 14%; left: 55%; rotate: 9deg; }
+
+.demo-card-5 { top: 11%; left: 52%; rotate: 3deg; }
+
+.demo-card-6 { top: 14%; left: 46%; rotate: -5deg; }
+
+
+.demo-detail { min-height: 100%; }
+
+.demo-detail-image { width: 100%; height: var(--bounded-focus-detail-image-height, clamp(120px, 42cqi, 152px)); min-height: 0; border-radius: 4px; object-fit: cover; object-position: var(--bounded-focus-detail-media-position, 50% 50%); }
+
+.demo-detail-eyebrow { margin: 15px 0 0; color: #78716c; font-size: 11px; font-weight: 750; letter-spacing: 0.14em; }
+
+.demo-detail h2 { margin: 5px 0 0; padding-right: 38px; font-family: Georgia, "Songti SC", serif; font-size: clamp(26px, 10cqi, 36px); line-height: 1; letter-spacing: -0.04em; }
+
+.demo-detail-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
+
+.demo-detail-tags span { padding: 5px 8px; border: 1px solid rgb(38 38 38 / 0.1); border-radius: 999px; background: #f5f5f4; color: #57534e; font-size: 11px; font-weight: 650; }
+
+.demo-detail-copy { margin: 13px 0 0; color: #57534e; font-size: 13px; line-height: 1.55; }
+
+.demo-detail-action { display: flex; justify-content: space-between; margin-top: 15px; padding-top: 12px; border-top: 1px solid rgb(38 38 38 / 0.12); font-size: 12px; font-weight: 750; }
+
+
+@media (max-width: 767px) {
+
+  /* 手机端：舞台高度有上限（不再撑满整屏再多 60px），页面不再比屏幕长、下半屏不再留大片空白 */
+  .fixture-shell { gap: 20px; padding: 12px; height: auto; min-height: 0; grid-template-rows: auto auto; align-content: start; }
+
+  .fixture-heading { padding-top: 8px; }
+
+  .fixture-stage { --bounded-focus-card-size: min(clamp(140px, 48vw, 224px), 48cqh); height: min(600px, 74svh); min-height: 0; border-radius: 18px; }
+
+  .demo-card { top: 12% !important; right: auto !important; left: 50% !important; }
+
+  .demo-card-1 { translate: calc(-50% - 24px) 0; }
+
+  .demo-card-2 { top: 28% !important; translate: calc(-50% + 20px) 0; }
+
+  .demo-card-3 { top: 5% !important; translate: calc(-50% - 7px) 0; }
+
+  .demo-card-4 { top: 36% !important; translate: calc(-50% + 27px) 0; }
+
+  .demo-card-5 { translate: calc(-50% - 18px) clamp(105px, 16svh, 128px); }
+
+  .demo-card-6 { translate: calc(-50% + 7px) 52px; }
+
+  .bounded-focus-card-front { padding: clamp(12px, 3.6vw, 17px); }
+
+  .bounded-focus-card-front h2 { margin-top: 8px; }
+
+  .bounded-focus-card-back-scroll { padding: clamp(12px, 3.6vw, 17px); }
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .bounded-focus-card-close:hover::before { background: white; transform: scale(1.04); }
+}
+
+
+.bounded-focus-card[data-reduced-motion="true"] .bounded-focus-card-face { transition: opacity 200ms cubic-bezier(0.23, 1, 0.32, 1) !important; }
+
+.bounded-focus-card[data-reduced-motion="true"] .bounded-focus-card-back { opacity: 0; transform: none; }
+
+.bounded-focus-card[data-reduced-motion="true"][data-flipped="true"] .bounded-focus-card-front { opacity: 0; }
+
+.bounded-focus-card[data-reduced-motion="true"][data-flipped="true"] .bounded-focus-card-back { opacity: 1; }
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  :where(.fixture-shell, .fixture-shell *) { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}

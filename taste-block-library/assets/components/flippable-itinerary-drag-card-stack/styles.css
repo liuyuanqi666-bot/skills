@@ -1,0 +1,120 @@
+.itinerary-fixture-shell { line-height: normal; font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif; color: #17201d; font-synthesis: none; min-height: 100vh; padding: clamp(28px, 4.5vw, 66px); background: radial-gradient(circle at 50% 50%, rgba(102, 129, 115, 0.1), transparent 34%), #f7f6f2; }
+
+.itinerary-fixture-heading { display: grid; justify-items: center; gap: 8px; text-align: center; }
+
+.itinerary-fixture-heading p { margin: 0; color: #527669; font-size: 11px; font-weight: 700; letter-spacing: 0.3em; }
+
+.itinerary-fixture-heading h1 { margin: 0; font-family: "Songti SC", SimSun, serif; font-size: clamp(34px, 4vw, 54px); font-weight: 600; letter-spacing: 0.03em; }
+
+.itinerary-fixture-heading span { color: #7b817e; font-size: 13px; }
+
+.itinerary-fixture-stage { display: grid; min-height: min(760px, calc(100vh - 176px)); margin-top: 20px; place-items: center; overflow: hidden; border: 0; border-radius: 28px; background: rgba(255, 255, 255, 0.72); box-shadow: inset 0 1px rgba(255, 255, 255, 0.72); }
+
+
+.flippable-itinerary-drag-stack { position: relative; width: clamp(306px, 27vw, 378px); aspect-ratio: 0.72; perspective: 1500px; isolation: isolate; }
+
+.itinerary-stack-slot { position: absolute; inset: 0; transform-origin: 50% 92%; user-select: none; }
+
+.itinerary-drag-shell,
+.itinerary-flip-card,
+.itinerary-face { width: 100%; height: 100%; }
+
+.itinerary-drag-shell { position: relative; cursor: grab; outline: none; transform-origin: 50% 88%; }
+
+.itinerary-drag-shell:active { cursor: grabbing; }
+
+.itinerary-drag-shell:focus-visible { border-radius: 25px; box-shadow: 0 0 0 4px rgba(92, 202, 220, 0.28); }
+
+.itinerary-flip-card { position: relative; transform-style: preserve-3d; }
+
+.itinerary-face { position: absolute; inset: 0; overflow: hidden; border: 0; border-radius: 25px; backface-visibility: hidden; box-shadow: 0 30px 54px rgba(23, 32, 29, 0.18), 0 9px 20px rgba(23, 32, 29, 0.1); }
+
+.itinerary-front { background: #14233d; }
+
+.itinerary-front img,
+.itinerary-image-fallback { display: block; width: 100%; height: 100%; }
+
+.itinerary-front img { object-fit: cover; pointer-events: none; }
+
+.itinerary-image-fallback { display: grid; place-items: center; background: #cbd9d2; color: #52665d; font-size: 12px; }
+
+.itinerary-front-vignette { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(3, 9, 18, 0.2), transparent 35%), linear-gradient(to top, rgba(3, 9, 18, 0.96), rgba(3, 9, 18, 0.08) 68%); pointer-events: none; }
+
+.itinerary-front-topline { position: absolute; top: 24px; left: 24px; display: flex; align-items: baseline; gap: 8px; color: #16231f; text-shadow: 0 1px 12px rgba(255, 255, 255, 0.36); }
+
+.itinerary-front-topline span { font-size: 11px; font-weight: 700; letter-spacing: 0.24em; }
+
+.itinerary-front-topline strong { font-family: Georgia, serif; font-size: 42px; font-weight: 400; line-height: 1; }
+
+.itinerary-flip-hint { display: inline-flex; align-items: center; color: rgba(231, 240, 246, 0.72); font-size: 10px; letter-spacing: 0.08em; }
+
+.itinerary-front > .itinerary-flip-hint { position: absolute; top: 27px; right: 22px; padding: 7px 9px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 999px; background: rgba(4, 12, 22, 0.22); backdrop-filter: blur(8px); }
+
+.itinerary-front-copy { position: absolute; right: 24px; bottom: 25px; left: 24px; color: white; text-shadow: 0 1px 12px rgba(0, 0, 0, 0.32); }
+
+.itinerary-front-copy p { margin: 0 0 10px; color: #c5d5e2; font-size: 12px; letter-spacing: 0.08em; }
+
+.itinerary-front-copy h2,
+.itinerary-back-scroll h2 { margin: 0; font-family: "Songti SC", SimSun, serif; font-weight: 600; }
+
+.itinerary-front-copy h2 { max-width: 12em; font-size: clamp(26px, 2.5vw, 34px); line-height: 1.22; }
+
+.itinerary-front-copy > span { display: block; margin-top: 20px; color: #77d2df; font-size: 11px; letter-spacing: 0.08em; }
+
+.itinerary-back { display: grid; grid-template-rows: auto minmax(0, 1fr); transform: rotateY(180deg); background: radial-gradient(circle at 90% 0%, rgba(82, 118, 105, 0.1), transparent 36%), #fbfaf7; }
+
+.itinerary-back-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 22px 22px 14px; border-bottom: 1px solid rgba(23, 32, 29, 0.1); }
+
+.itinerary-back-header span { color: #527669; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; }
+
+.itinerary-back-header p { margin: 5px 0 0; color: #6f7773; font-size: 11px; line-height: 1.45; }
+
+.itinerary-back-header .itinerary-flip-hint { flex: 0 0 auto; color: #7b817e; font-weight: 400; letter-spacing: 0.04em; }
+
+.itinerary-back-scroll { min-height: 0; padding: 20px 22px 58px; overflow-y: auto; overscroll-behavior: contain; scrollbar-color: rgba(82, 118, 105, 0.45) transparent; scrollbar-width: thin; user-select: text; }
+
+.itinerary-back-scroll::-webkit-scrollbar { width: 5px; }
+
+.itinerary-back-scroll::-webkit-scrollbar-thumb { border-radius: 999px; background: rgba(82, 118, 105, 0.45); }
+
+.itinerary-back-scroll h2 { font-size: 25px; line-height: 1.28; }
+
+.itinerary-tag-list { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 15px; }
+
+.itinerary-tag-list span { padding: 5px 9px; border: 1px solid rgba(23, 32, 29, 0.14); border-radius: 999px; color: #626b67; font-size: 10px; }
+
+.itinerary-description { margin-top: 18px; color: #48514d; font-size: 12px; line-height: 1.75; }
+
+.itinerary-description p { margin: 0 0 12px; }
+
+.itinerary-description blockquote { margin: 16px 0 0; padding: 11px 13px; border-left: 2px solid #527669; background: rgba(82, 118, 105, 0.07); color: #5d6863; }
+
+.itinerary-detail-list { margin-top: 22px; border-top: 1px solid rgba(23, 32, 29, 0.12); }
+
+.itinerary-detail-row { display: grid; grid-template-columns: 42px 1fr; gap: 10px; padding: 11px 0; border-bottom: 1px solid rgba(23, 32, 29, 0.1); }
+
+.itinerary-detail-row span { color: #527669; font-size: 11px; }
+
+.itinerary-detail-row p { margin: 0; color: #48514d; font-size: 11px; line-height: 1.55; }
+
+.itinerary-detail-footnote { margin: 16px 0 0; color: #89908d; font-size: 9px; line-height: 1.6; }
+
+.itinerary-scroll-fade { position: absolute; right: 1px; bottom: 1px; left: 1px; height: 38px; border-radius: 0 0 24px 24px; background: linear-gradient(to bottom, transparent, #fbfaf7 82%); pointer-events: none; }
+
+.itinerary-stack-fallback { display: grid; min-height: 280px; place-items: center; padding: 24px; border-radius: 22px; background: #e8ece9; color: #69736e; text-align: center; }
+
+
+@media (max-width: 640px) {
+
+  .itinerary-fixture-shell { padding: 12px 14px; }
+
+  .itinerary-fixture-stage { min-height: 560px; border-radius: 20px; }
+
+  .flippable-itinerary-drag-stack { width: min(82vw, 340px); }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .itinerary-flip-card { transition: opacity 200ms ease; }
+}

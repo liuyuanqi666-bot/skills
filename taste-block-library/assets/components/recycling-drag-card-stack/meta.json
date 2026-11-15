@@ -1,0 +1,9 @@
+{
+  "kind": "effect",
+  "summary": "横向拖拽叠卡：松手顶牌回弹并移到最后，下一张放大上位",
+  "use_when": "少量目的地/产品/作品序列，强调直接操作",
+  "avoid_when": "有序表单、任务型选择、需全部可见、少于 3 项",
+  "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+  ]
+}

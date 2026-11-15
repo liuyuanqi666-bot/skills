@@ -1,0 +1,59 @@
+{
+  "animated-testimonials": {
+    "bodyClass": "bg-slate-50 text-slate-900 antialiased selection:bg-slate-200"
+  },
+  "apple-cards-itinerary": {
+    "bodyClass": "bg-white text-neutral-900 antialiased selection:bg-neutral-200"
+  },
+  "aurora-background": {
+    "bodyClass": "bg-zinc-50 dark:bg-zinc-950 min-h-screen text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-500 selection:text-white"
+  },
+  "celestial-sparkle-beam": {
+    "bodyClass": "bg-black text-white m-0 p-0 overflow-x-hidden"
+  },
+  "chromatic-image-carousel": {
+    "htmlClass": "dark",
+    "bodyClass": "bg-white text-neutral-950 dark:bg-black dark:text-neutral-50 antialiased"
+  },
+  "flexible-card-stack": {
+    "lang": "en",
+    "bodyClass": "bg-white text-slate-900 antialiased"
+  },
+  "focus-cards": {
+    "bodyClass": "bg-slate-950 text-slate-100 min-h-screen"
+  },
+  "gooey-input": {
+    "htmlClass": "dark",
+    "bodyClass": "bg-zinc-950 text-zinc-100 antialiased min-h-screen"
+  },
+  "images-slider": {
+    "htmlClass": "dark"
+  },
+  "immersive-media-card-stack-showcase": {
+    "lang": "en",
+    "bodyClass": "bg-white text-slate-900 antialiased"
+  },
+  "plane-window-cloud-shader-hero": {
+    "bodyClass": "bg-white text-white antialiased m-0 p-0 overflow-x-hidden"
+  },
+  "shooting-stars-and-stars-background": {
+    "htmlClass": "dark",
+    "bodyClass": "bg-neutral-950 text-neutral-100 min-h-screen"
+  },
+  "split-narrative-card-stack-section": {
+    "lang": "en",
+    "bodyClass": "bg-white text-slate-900 antialiased"
+  },
+  "tracing-beam": {
+    "bodyClass": "bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased"
+  },
+  "tracing-narrative-showcase": {
+    "bodyClass": "bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased"
+  },
+  "vortex-particle-field": {
+    "bodyClass": "bg-[#09090b] text-[#f4f4f5] m-0 p-0 overflow-x-hidden"
+  },
+  "webgl-chromatic-aberration-hero": {
+    "lang": "en"
+  }
+}

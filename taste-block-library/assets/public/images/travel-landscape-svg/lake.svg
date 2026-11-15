@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 423" role="img" aria-label="湖畔山城插画">
+  <defs><linearGradient id="q" x2="0" y2="1"><stop stop-color="#7eb0d0"/><stop offset=".55" stop-color="#e6c895"/><stop offset=".56" stop-color="#497891"/><stop offset="1" stop-color="#183f58"/></linearGradient></defs>
+  <rect width="720" height="423" fill="url(#q)"/><path d="M0 250 104 156l62 55 94-126 133 157 99-112 128 120Z" fill="#334c59"/><path d="m104 156 62 55 94-126 133 157-134-91-52 91-52-16Z" fill="#dbe1df"/><g fill="#f2d073"><rect x="95" y="306" width="28" height="22"/><rect x="136" y="286" width="34" height="30"/><rect x="184" y="317" width="26" height="20"/><rect x="232" y="292" width="38" height="34"/><rect x="287" y="309" width="31" height="23"/></g><path d="M0 344q130-28 260 0t260 0 200 0" fill="none" stroke="#bce8f0" stroke-width="5" opacity=".65"/>
+</svg>

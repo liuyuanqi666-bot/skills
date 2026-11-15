@@ -1,0 +1,6 @@
+{
+  "kind": "section",
+  "summary": "全幅旅游 Hero：WebGL 云海 + 漂浮机翼 + 锚点按钮 + 目的地预览 + 线路目录",
+  "use_when": "要云海飞行氛围但不要舷窗边框的产品首屏",
+  "avoid_when": "不适合 WebGL、只需静态 Banner、文案超出层级；要拱形舷窗边框改用 plane-window-cloud-shader-hero（二者同源，仅边框不同，别同页混用）"
+}

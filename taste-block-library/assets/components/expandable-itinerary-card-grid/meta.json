@@ -1,0 +1,9 @@
+{
+  "kind": "section",
+  "summary": "2×2 分页日程卡，选中卡居中，只展开下半部详情区",
+  "use_when": "逐日图片行程：手机可直达某天、桌面分页浏览",
+  "avoid_when": "可编辑日程、密集对比表、无法放固定浮层的页面",
+  "allow_missing": [
+    "/images/travel-landscape-svg/not-found.svg"
+  ]
+}
